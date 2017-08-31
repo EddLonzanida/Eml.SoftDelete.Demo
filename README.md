@@ -1,4 +1,4 @@
-# Eml.SoftDelete
+# [Eml.SoftDelete](https://www.nuget.org/packages/Eml.SoftDelete/)
 Implement SoftDeletes using Entity Framework 6.
 
 
