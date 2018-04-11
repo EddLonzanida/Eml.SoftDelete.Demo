@@ -3,7 +3,7 @@ Implement SoftDeletes using Entity Framework 6.
 
 
 ## Usage
-#### 1. Add *softDeleteColumnConvention* in your [DbContext](https://github.com/EddLonzanida/Eml.SoftDelete.Demo/blob/master/Eml.SoftDelete.Data/DefaultDb.cs).
+#### 1. Add *softDeleteColumnConvention* in your [DbContext](https://github.com/EddLonzanida/Eml.SoftDelete.Demo/blob/master/Tests/TestArtifacts/Eml.SoftDelete.Data/TestDbSoftDelete.cs).
 
 ```javascript
 protected override void OnModelCreating(DbModelBuilder modelBuilder)
