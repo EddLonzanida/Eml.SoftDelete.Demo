@@ -42,7 +42,7 @@ public abstract class EntityBase : IEntityBase
 }
 ```
 
-#### 3. Add SoftDeleteInterceptor.
+#### 3. Add a new class inheriting SoftDeleteInterceptorBase and let the base class do the heavy lifting.
 
 ```javascript
 public class SoftDeleteInterceptor : SoftDeleteInterceptorBase

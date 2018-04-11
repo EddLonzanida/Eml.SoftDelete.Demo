@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.SoftDelete.Data", "Eml.SoftDelete.Data\Eml.SoftDelete.Data.csproj", "{7E950A46-D3EE-4B9F-930D-2059D92DD9BE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestArtifacts", "TestArtifacts", "{281AD1E8-59DF-4D33-8816-EC79E2BAD62E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eml.SoftDelete.Tests", "Eml.SoftDelete.Tests\Eml.SoftDelete.Tests.csproj", "{6A3DAD04-1E1F-43A3-ACA0-3054BC46E13B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eml.SoftDelete.Data", "Tests\TestArtifacts\Eml.SoftDelete.Data\Eml.SoftDelete.Data.csproj", "{E43A40A1-AB2F-4770-A250-F2D5B682C82F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E5FDCC02-2DA3-4848-9572-8886E703F3A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eml.SoftDelete.Tests.Integration", "Tests\Eml.SoftDelete.Tests.Integration\Eml.SoftDelete.Tests.Integration.csproj", "{E46070FB-4FC4-4926-BC1C-0ECCE968B910}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +17,24 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E950A46-D3EE-4B9F-930D-2059D92DD9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E950A46-D3EE-4B9F-930D-2059D92DD9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E950A46-D3EE-4B9F-930D-2059D92DD9BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E950A46-D3EE-4B9F-930D-2059D92DD9BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A3DAD04-1E1F-43A3-ACA0-3054BC46E13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A3DAD04-1E1F-43A3-ACA0-3054BC46E13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A3DAD04-1E1F-43A3-ACA0-3054BC46E13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A3DAD04-1E1F-43A3-ACA0-3054BC46E13B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43A40A1-AB2F-4770-A250-F2D5B682C82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43A40A1-AB2F-4770-A250-F2D5B682C82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43A40A1-AB2F-4770-A250-F2D5B682C82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43A40A1-AB2F-4770-A250-F2D5B682C82F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46070FB-4FC4-4926-BC1C-0ECCE968B910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46070FB-4FC4-4926-BC1C-0ECCE968B910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46070FB-4FC4-4926-BC1C-0ECCE968B910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46070FB-4FC4-4926-BC1C-0ECCE968B910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{281AD1E8-59DF-4D33-8816-EC79E2BAD62E} = {E5FDCC02-2DA3-4848-9572-8886E703F3A7}
+		{E43A40A1-AB2F-4770-A250-F2D5B682C82F} = {281AD1E8-59DF-4D33-8816-EC79E2BAD62E}
+		{E46070FB-4FC4-4926-BC1C-0ECCE968B910} = {E5FDCC02-2DA3-4848-9572-8886E703F3A7}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8940F332-BDAD-4221-9A93-5248F59D449E}
+		SolutionGuid = {3AA78612-5854-413F-B688-F34D4C70AD5F}
 	EndGlobalSection
 EndGlobal
