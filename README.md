@@ -16,29 +16,17 @@ protected override void OnModelCreating(DbModelBuilder modelBuilder)
 }
 ```
 
-#### 2. Decorate your Entities with  *[SoftDelete(**"DateDeleted"**)]* where ***DateDeleted*** is the SoftDeleteColumnName.
+#### 2. Inherit from any of the [base classes](https://www.nuget.org/packages/Eml.EntityBaseClasses/):  
+* EntityBaseSoftDeleteGuid
+* EntityBaseSoftDeleteInt
 
 ```javascript
-[SoftDelete(SoftDeleteColumn.Name)]
-public class Company : EntityBase
+public class Company : EntityBaseSoftDeleteInt
 {
     [Required]
     public string Name { get; set; }
 
     public string Description { get; set; }
-}
-```
-
-```javascript
-public abstract class EntityBase : IEntityBase
-{
-    [Key]
-    public int Id { get; set; }
-
-    [Display(Name = "DateDeleted")]
-    [DataType(DataType.Date)]
-    [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-    public DateTime? DateDeleted { get; set; }  // <- SoftDeleteColumnName
 }
 ```
 
